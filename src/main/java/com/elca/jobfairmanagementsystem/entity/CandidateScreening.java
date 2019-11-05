@@ -10,12 +10,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  *
  * @author ghr
  */
-@Data
+@Getter
+@Setter
 @Entity
 @Table(name = "candidate_screening")
 public class CandidateScreening {

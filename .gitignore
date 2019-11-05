@@ -10,14 +10,16 @@ target/
 .factorypath
 .project
 .settings
-.springBeans
 .sts4-cache
+.springBeans
+
 
 ### IntelliJ IDEA ###
 .idea
 *.iws
-*.iml
 *.ipr
+*.iml
+
 
 ### NetBeans ###
 /nbproject/private/
@@ -26,6 +28,9 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
+.mvn/
+mvnw
+mvnw.cmd
 
 ### VS Code ###
 .vscode/

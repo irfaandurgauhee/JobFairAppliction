@@ -1,5 +1,7 @@
 package com.elca.jobfairmanagementsystem.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,7 +24,7 @@ public class CandidateScreening {
     private Long CandidateScreeningId;
 
     @Column
-    private Data InterviewDate;
+    private Date InterviewDate;
 
     @Column
     private String PositionJob;

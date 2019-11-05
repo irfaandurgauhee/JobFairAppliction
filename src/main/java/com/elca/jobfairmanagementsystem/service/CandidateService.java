@@ -1,4 +1,4 @@
-package com.elca.jobfairmanagementsystem.service.serviceImpl;
+package com.elca.jobfairmanagementsystem.service;
 
 /**
  *

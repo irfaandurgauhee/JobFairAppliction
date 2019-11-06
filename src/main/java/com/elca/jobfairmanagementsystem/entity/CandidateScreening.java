@@ -21,19 +21,19 @@ public class CandidateScreening {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long CandidateScreeningId;
 
-    @Column
+    @Column(name = "interview_date")
     private Data InterviewDate;
 
-    @Column
+    @Column(name = "position_job")
     private String PositionJob;
 
-    @Column
+    @Column(name = "interviewer_name")
     private String InterviewerName;
 
-    @Column
+    @Column(name = "interviewer_feedback")
     private String InterviewerFeedback;
 
-    @Column
+    @Column(name = "screening_status")
     private String ScreeningStatus;
 
 

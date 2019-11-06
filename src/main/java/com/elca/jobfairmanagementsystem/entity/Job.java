@@ -31,7 +31,7 @@ public class Job {
     private String description;
 
     @Column(name = "minimum_experience")
-    private String  minimumExperience;
+    private String minimumExperience;
 
     @Column(name = "qualification_needed")
     private String qualificationNeed;

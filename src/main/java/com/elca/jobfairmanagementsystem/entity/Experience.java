@@ -1,12 +1,9 @@
 package com.elca.jobfairmanagementsystem.entity;
 
-
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -14,7 +11,8 @@ import javax.persistence.Table;
 @Table(name = "experience")
 public class Experience {
 
-    @Column
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long experienceId;
 
     @Column
@@ -28,6 +26,5 @@ public class Experience {
 
     @Column
     private String leavingReason;
-
 
 }

@@ -11,7 +11,8 @@ import java.util.Date;
 @Table(name = "qualification")
 public class Qualification {
 
-    @Column
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long qualificationId;
 
     @Column
@@ -30,7 +31,5 @@ public class Qualification {
     @Column
     @Temporal(TemporalType.DATE)
     private Date dateTo;
-
-
 
 }

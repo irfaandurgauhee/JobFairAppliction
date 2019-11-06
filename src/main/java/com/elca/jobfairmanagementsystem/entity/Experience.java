@@ -36,7 +36,6 @@ public class Experience {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "candidateId")
-    @OnDelete(action = OnDeleteAction.CASCADE)
     private Candidate candidate;
 
 }

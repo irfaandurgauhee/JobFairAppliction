@@ -44,7 +44,6 @@ public class Qualification {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "candidateId")
-    @OnDelete(action = OnDeleteAction.CASCADE)
     private Candidate candidate;
 
 

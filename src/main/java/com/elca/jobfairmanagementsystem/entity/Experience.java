@@ -2,6 +2,9 @@ package com.elca.jobfairmanagementsystem.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
 
 /**
@@ -30,5 +33,9 @@ public class Experience {
 
     @Column(name = "leaving_reason")
     private String leavingReason;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "candidateId")
+    private Candidate candidate;
 
 }

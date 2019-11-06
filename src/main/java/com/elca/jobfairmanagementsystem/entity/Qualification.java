@@ -2,6 +2,9 @@ package com.elca.jobfairmanagementsystem.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -37,5 +40,11 @@ public class Qualification {
     @Column(name ="date_to")
     @Temporal(TemporalType.DATE)
     private Date dateTo;
+
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "candidateId")
+    private Candidate candidate;
+
 
 }

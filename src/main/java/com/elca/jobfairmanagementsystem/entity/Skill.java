@@ -4,6 +4,10 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+/**
+ *
+ * @author bfk
+ */
 
 @Getter
 @Setter

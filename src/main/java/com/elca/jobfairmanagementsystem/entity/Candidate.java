@@ -21,24 +21,25 @@ public class Candidate {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long candidateId;
 
-    @Column
+    @Column(name = "first_name")
     private String firstName;
 
-    @Column
+    @Column(name="last_name")
     private String lastName;
 
-    @Size(max = 50)
-    @Email
+    @Column(name="email")
     private String email;
 
-    @Column
+    @Column(name="mobile_no")
     private int mobileNo;
 
-    @Column
+    @Column(name="phone_no")
     private int phoneNo;
-    @Column
+
+    @Column(name = "address")
     private String address;
-    @Column
+
+    @Column(name = "nationality")
     private String Nationality;
 
 }

@@ -1,11 +1,15 @@
 package com.elca.jobfairmanagementsystem.entity;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
 import java.util.Date;
 
+@Getter
+@Setter
+@Entity
+@Table(name = "venue")
 public class Venue {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

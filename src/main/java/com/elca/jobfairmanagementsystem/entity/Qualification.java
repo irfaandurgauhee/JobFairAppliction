@@ -43,7 +43,7 @@ public class Qualification {
 
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "candidateId")
+    @JoinColumn(name = "candidate_id")
     private Candidate candidate;
 
 

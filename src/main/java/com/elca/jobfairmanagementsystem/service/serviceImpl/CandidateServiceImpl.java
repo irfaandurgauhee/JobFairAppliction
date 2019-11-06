@@ -1,4 +1,8 @@
 package com.elca.jobfairmanagementsystem.service.serviceImpl;
 
-public class JobServiceImpl {
+/**
+ *
+ * @author ghr
+ */
+public class CandidateServiceImpl {
 }

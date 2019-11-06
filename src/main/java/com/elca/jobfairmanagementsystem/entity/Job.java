@@ -1,14 +1,12 @@
 package com.elca.jobfairmanagementsystem.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  *
@@ -33,6 +31,9 @@ public class Job {
     @Column(name = "minimum_experience")
     private String  minimumExperience;
 
-    @Column(name = "qualification_needed")
-    private String qualificationNeed;
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "venue_job",
+            joinColumns = { @JoinColumn(name = "job_id") },
+            inverseJoinColumns = { @JoinColumn(name = "venue_id") })
+    private Set<Venue> venues = new HashSet<>();
 }

@@ -34,6 +34,7 @@ public class Candidate {
     @Column(name="mobile_no")
     private int mobileNo;
 
+
     @Column(name="phone_no")
     private int phoneNo;
 

@@ -41,7 +41,6 @@ public class Qualification {
     @Temporal(TemporalType.DATE)
     private Date dateTo;
 
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "candidate_id")
     private Candidate candidate;

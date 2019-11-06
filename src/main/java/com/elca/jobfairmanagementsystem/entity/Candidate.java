@@ -1,14 +1,12 @@
 package com.elca.jobfairmanagementsystem.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  *
@@ -46,5 +44,8 @@ public class Candidate {
 
     @Column(name = "nationality")
     private String Nationality;
+
+    @ManyToMany(mappedBy = "candidates")
+    private Set<Skill> skills = new HashSet<>();
 
 }

@@ -5,13 +5,19 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Date;
 
+/**
+ *
+ * @author koo
+ */
+
 @Getter
 @Setter
 @Entity
 @Table(name = "qualification")
 public class Qualification {
 
-    @Column
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long qualificationId;
 
     @Column
@@ -30,7 +36,5 @@ public class Qualification {
     @Column
     @Temporal(TemporalType.DATE)
     private Date dateTo;
-
-
 
 }

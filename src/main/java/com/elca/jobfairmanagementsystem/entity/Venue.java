@@ -25,5 +25,6 @@ public class Venue {
     @Column(name = "end_date")
     private Date endDate;
 
+    @Column
     private boolean status;
 }

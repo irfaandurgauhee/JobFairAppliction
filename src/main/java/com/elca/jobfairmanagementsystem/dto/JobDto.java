@@ -2,6 +2,9 @@ package com.elca.jobfairmanagementsystem.dto;
 
 import lombok.Data;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Data
 public class JobDto {
 
@@ -14,4 +17,6 @@ public class JobDto {
     private String  minimumExperience;
 
     private String qualificationNeeded;
+
+    private Set<VenueDto> venues = new HashSet<>();
 }

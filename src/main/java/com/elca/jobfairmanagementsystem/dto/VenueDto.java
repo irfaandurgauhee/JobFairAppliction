@@ -3,6 +3,8 @@ package com.elca.jobfairmanagementsystem.dto;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 public class VenueDto {
@@ -16,4 +18,6 @@ public class VenueDto {
     private Date endDate;
 
     private boolean status;
+
+    private Set<JobDto> venues = new HashSet<>();
 }
